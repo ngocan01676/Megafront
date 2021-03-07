@@ -1,0 +1,32 @@
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.header {
+  .container {
+    &::after {
+      content: '';
+      width: 100%;
+      clear: both;
+      display: table;
+    }
+  }
+  animation-duration: 0.5s;
+  transition: 0.5s;
+  &.isSticky {
+    z-index: 99;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: fadeIn 0.5s ease-in both;
+    transition: none;
+  }
+}

@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+input,select,button {
+  &:focus {
+    outline: none;
+  }
+}
+select {
+  cursor: pointer;
+}

@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "0b1982ef-c938-4bcb-8abb-0ae2d818bae7"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -53,9 +56,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/ngx-toastr/toastr.css" 
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery.min.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/slick.min.js",
+              "src/assets/js/nouislider.min.js",
+              "src/assets/js/jquery.zoom.min.js"
+            ]
           },
           "configurations": {
             "production": {
